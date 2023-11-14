@@ -9,6 +9,8 @@ local options = {
       "--line-number",
       "--column",
       "--smart-case",
+      "--hidden", -- live grep also in dotfiles
+      "-g", "!.git/", -- ignore .git folder
     },
     prompt_prefix = "   ",
     selection_caret = "  ",
@@ -31,7 +33,7 @@ local options = {
       preview_cutoff = 120,
     },
     file_sorter = require("telescope.sorters").get_fuzzy_file,
-    file_ignore_patterns = { "node_modules" },
+    file_ignore_patterns = { "node_modules", ".git/" },
     generic_sorter = require("telescope.sorters").get_generic_fuzzy_sorter,
     path_display = { "truncate" },
     winblend = 0,
@@ -48,7 +50,12 @@ local options = {
       n = { ["q"] = require("telescope.actions").close },
     },
   },
-
+  pickers = {
+    find_files = {
+      hidden = true,
+      no_ignore = true, -- false == consider .gitignore .ignore, true == show all files
+    }
+  },
   extensions_list = { "themes", "terms", "fzf" },
   extensions = {
     fzf = {

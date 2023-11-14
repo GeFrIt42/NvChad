@@ -23,12 +23,15 @@ opt.softtabstop = 2
 opt.fillchars = { eob = " " }
 opt.ignorecase = true
 opt.smartcase = true
-opt.mouse = "a"
+opt.mouse = ""
+opt.list = true -- show traling characters
+vim.api.nvim_set_option_value("colorcolumn", "80", {})
 
 -- Numbers
 opt.number = true
 opt.numberwidth = 2
 opt.ruler = false
+opt.relativenumber = true
 
 -- disable nvim intro
 opt.shortmess:append "sI"
