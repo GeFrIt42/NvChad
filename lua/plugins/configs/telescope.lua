@@ -11,6 +11,7 @@ local options = {
       "--smart-case",
       "--hidden", -- live grep also in dotfiles
       "-g", "!.git/", -- ignore .git folder
+      "--ignore-case",
     },
     prompt_prefix = "   ",
     selection_caret = "  ",
