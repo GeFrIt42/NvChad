@@ -37,8 +37,11 @@ M.mason = {
     "prettier",
 
     -- c/cpp stuff
-    "clangd",
-    "clang-format",
+    -- clangd and clang-format need dynamic linking that in nix works different
+    -- install them in nix way to avoid dinamic linking clash
+    -- https://github.com/Mic92/nix-ld
+    --"clangd",
+    --"clang-format",
   },
 }
 
