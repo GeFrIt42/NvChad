@@ -55,6 +55,7 @@ local options = {
     find_files = {
       hidden = true,
       no_ignore = true, -- false == consider .gitignore .ignore, true == show all files
+      follow = true, -- find also symlink
     }
   },
   extensions_list = { "themes", "terms", "fzf" },
