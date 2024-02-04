@@ -9,6 +9,7 @@ M.treesitter = {
     "ini",
     "javascript",
     "lua",
+    "make",
     "markdown",
     "markdown_inline",
     "tsx",
