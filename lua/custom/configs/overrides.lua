@@ -2,6 +2,7 @@ local M = {}
 
 M.treesitter = {
   ensure_installed = {
+    "bash",
     "c",
     "cpp",
     "css",
@@ -12,6 +13,9 @@ M.treesitter = {
     "make",
     "markdown",
     "markdown_inline",
+    "nix",
+    "python",
+    "ruby",
     "tsx",
     "typescript",
     "vim",
