@@ -40,7 +40,7 @@ M.mason = {
     "typescript-language-server",
     -- "deno",
     "prettier",
-
+    "marksman",
     -- c/cpp stuff
     -- clangd and clang-format need dynamic linking that in nix works different
     -- install them in nix way to avoid dinamic linking clash
